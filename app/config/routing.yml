@@ -1,0 +1,6 @@
+mimento:
+    resource: "@MimentoBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+
