@@ -1,0 +1,273 @@
+* { box-sizing: border-box; }
+
+nav a { color: white !important; }
+
+nav a:hover { color: lightgrey !important; }
+
+body { font-family: 'PT Sans', sans-serif !important; }
+
+.navbar-default .navbar-nav > .active > a { background-color: #226e89; }
+
+.navbar-default .navbar-nav > .active > a:hover { background-color: #226e89; }
+
+.dropdown-menu > li > a { color: darkgrey !important; }
+
+.c-img-ban {
+    min-width: 100%;
+    min-height: 350px;
+    background: url(../img/bann.jpg) no-repeat center fixed;
+    background-size: cover;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+.c-titre-ban {
+    margin-top: 120px;
+    text-shadow : 0px 0px 5px #000;
+}
+
+.noir {
+    background: rgba(0,0,0, 0.5);
+    position: relative;
+    min-height: 100% !important;
+    min-width: 100%;
+    bottom: 0;
+}
+
+.c-img-info {
+    min-width: 100%;
+    min-height: 250px;
+    background: #7fcbad;
+}
+
+.c-footer {
+    min-width: 100%;
+    min-height: 190px;
+    background: #0e546d;
+    margin-top: 50px;
+}
+
+.c-btn-news { width: 100%; }
+
+.c-block-logo {
+    min-height: 160px;
+    min-width: 160px;
+    max-height: 160px;
+    max-width: 160px;
+    background: #0e546d;
+    opacity: 0.9;
+}
+
+.c-block-logo:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.communication {
+    background: url(../img/communication.png);
+    background-size: 160px;
+}
+
+.integration {
+    background: url(../img/inteWeb.png);
+    background-size: 160px;
+}
+
+.infographie {
+    background: url(../img/infographie.png);
+    background-size: 160px;
+}
+
+.reseau {
+    background: url(../img/reseau.png);
+    background-size: 160px;
+}
+
+.video {
+    background: url(../img/video.png);
+    background-size: 160px;
+}
+
+.c-block-logo-dash {
+    min-height: 160px;
+    min-width: 160px;
+    max-height: 160px;
+    max-width: 160px;
+    background: #7fcbad;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.c-mention {
+    border-left: solid 2px white;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-brand { min-width: 100px !important; }
+
+.pseudo {
+    max-width: 25px !important;
+    margin-right: 5px;
+}
+
+.logo-mimento {
+    margin-top: 5px;
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.c-whiteTxt { color: white; }
+
+.c-mentionBlock { margin-top: 15px; }
+
+.padding { padding: 15px; }
+
+.text-center { text-align: center; }
+
+.margin-top {
+    margin-top: 25px;
+}
+
+div.row {
+    position: relative;
+    width: 100%;
+}
+
+.c-block {
+    min-width: 242px;
+    min-height: 200px;
+    max-width: 242px;
+    max-height: 400px;
+    position: relative;
+    margin: auto;
+}
+
+.c-block:hover { cursor: pointer; }
+
+.c-block .image {
+    background: url(../img/illu.jpg);
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    display: block;
+}
+
+.c-block .nom {
+    background: #7fcbad;
+    position: relative;
+    width: 100%;
+    min-height: 20px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.c-block .auteur {
+    background: lightgrey;
+    position: relative;
+    width: 100%;
+    min-height: 20px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: 
+}
+
+#cours { margin-bottom: 35px; }
+
+#Dash { margin-top: 75px; }
+
+.c-profil {
+    position: relative;
+    background: white;
+    min-height: 20px;
+    padding: 15px;
+}
+
+.c-newsletter {
+    position: relative;
+    background: #7fcbad;
+    min-height: 990px;
+    padding: 15px;
+}
+
+.newsletter-com {
+    color: white;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.newsletter-titre {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.notif-list {
+    background: white;
+    height: 800px;
+    padding: 8px;
+}
+
+.notif-block {
+    background: orange;
+    color: white;
+    font-size: 20px;
+    padding: 10px 0px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.block-cour {
+    position: relative;
+    margin: 10px;
+}
+
+.image-cour {
+    position: relative;
+    width: 100%;
+    background: red;
+    min-height: 150px;
+}
+
+.nom-cour {
+    position: relative;
+    background: #7fcbad;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+}
+
+.photo-etudiant {
+    position: relative;
+    margin: auto;
+    max-width: 200px;
+}
+
+.photo-etudiant img {
+    max-width: 200px;
+}
+
+.nom-etudiant {
+    font-size: 24px;
+    color: darkgrey;
+    margin-bottom: 10px;
+}
+
+.nom-etudiant span {
+    font-weight: bold;
+}
+
+.inscription {
+    color: #226e89;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dern-co {
+    color: #7fcbad;
+}

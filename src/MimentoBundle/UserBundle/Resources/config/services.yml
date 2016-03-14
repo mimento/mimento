@@ -1,0 +1,4 @@
+services:
+#    mimento_bundle_user.example:
+#        class: MimentoBundle\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

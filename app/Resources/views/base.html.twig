@@ -2,16 +2,76 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}{% endblock %} - mimento </title>
-	<meta name="viewport" content="width:device-width, initial-scale=1.0"/>	
-       	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
+        <title>{% block title %}{% endblock %} - Mimento </title>
+	    <meta name="viewport" content="width:device-width, initial-scale=1.0"/>
+       	<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
 	{% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+        {% block header %}<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand c-whiteTxt" href="#" style="padding: 0px;">
+                    <img src="{{ asset('img/logo.png') }}" class="logo-mimento">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="c-whiteTxt"><a href="#">Accueil <span class="sr-only">(current)</span></a></li>
+                    <li class="c-whiteTxt"><a href="#">Cours</a></li>
+                    <li class="c-whiteTxt"><a href="#">Forum</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  <img alt="Brand" src="{{ asset('img/pseudo.png') }}" class="pseudo"> Mon <strong>Nom</strong></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Profil</a></li>
+                            <li><a href="#">Messagerie</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Déconnexion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav> {% endblock %}
         {% block body %}{% endblock %}
+        {% block footer %}<section>
+        <div class="c-footer">
+            <div class="container padding">
+                <div class="row c-mentionBlock c-whiteTxt">
+                    <h3>Mimento</h3>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 c-mention">
+                        <a href="#">Mentions légales</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 c-mention">
+                        <a href="#">Mimento, qu'est-ce que c'est ?</a>
+                    </div>
+                </div>
+                <div class="row c-mentionBlock">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 c-mention">
+                        <a href="#">Aides</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 c-mention">
+                        <a href="#">Une plateforme pour MMI !</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> {% endblock %}
         {% block javascripts %}{% endblock %}
-	<script src="//code.jquery.com/jquery.min.js"></script>
-	<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+	    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     </body>
 </html>
