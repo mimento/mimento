@@ -1,0 +1,65 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block title %}Login{% endblock %}
+
+{% block fos_user_content %}
+{% if error %}
+    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}
+
+    <div class="header-video">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" id="dwelcome">
+                    <h1 id="dwelcome">BIENVENUE SUR MIMENTO ~</h1>
+                </div>
+                <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3" id="dbloc_connexion">
+                    <h1 class="text-center">LOGIN</h1>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+                                <form action="{{ path("fos_user_security_check") }}" method="post">
+                                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                                    <div class="form-group">
+
+                                        <label for="username">{{ 'security.login.username'|trans }}</label>
+                                        <input class="form-control" type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">{{ 'security.login.password'|trans }}</label>
+                                        <input type="password" class="form-control" id="password" name="_password" required="required" />
+                                    </div>
+                                    <div>
+
+                                            <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                                            <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-default" id="dloginbutton" name="_submit" value="{{ 'security.login.submit'|trans }}">Login</button>
+                                    <button type="button" class="btn btn-default col-lg-offste-1 col-md-offset-1" id="dpassword">Pass oublié ?</button>
+                                    <div class="checkbox">
+                                        <a href="inscription.html"><button type="button" class="btn btn-default col-lg-offste-2 col-md-offset-2" id="dnewuser">Nouveau sur Mimento ?</button></a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="header-video__media" data-teaser="Dive1" data-video-width="560" data-video-height="315">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock fos_user_content %}

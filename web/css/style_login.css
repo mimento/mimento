@@ -1,0 +1,111 @@
+*{
+    font-family: 'PT Sans', sans-serif;
+}
+
+video {
+    width: 100%;
+}
+
+.videotexte {
+position:absolute;
+float:left;
+    z-index:300000;
+
+}
+
+.header-video {
+  position: relative;
+  overflow: hidden;
+}
+
+.header-video iframe,
+.header-video video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-video iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.header-video video {
+  width: 100%;
+}
+
+.header-video__teaser-video {
+  width: 100%;
+  height: auto; 
+}
+
+.header-video__media {
+  width: 100%;
+  height: auto;
+}
+
+.dcircletop{
+    z-index: 2;
+    width: auto;
+    margin-top: 1%;
+}
+
+.dcircletop img{
+    width: 50px;
+    height: auto;
+    display: inline !important;
+}
+
+
+#dwelcome{
+    z-index: 1;
+    color: white;
+    margin-top: 2%;
+}
+
+#dbloc_connexion{
+    height: auto;
+    background-color: rgba(127, 203, 173,0.9);
+    z-index: 1;
+    padding-bottom: 2%;
+    color: white;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+#dloginbutton{
+    color: white;
+    background-color: rgb(103, 116,125);
+    border: none;
+    border-radius: 0;
+    width: 45%;
+    height: auto;
+}
+
+#dpassword{
+    color: white;
+    background-color: rgb(155,169,168);
+    border: none;
+    border-radius: 0;
+    width: 45%;
+}
+
+#dnewuser{
+    color: white;
+    background-color: rgb(16,66,90);
+    border: none;
+    border-radius: 0;
+    width: auto;
+    margin-top: 3%;
+}
+
+#dinscrip{
+    color: white;
+    background-color: rgb(16,66,90);
+    border: none;
+    border-radius: 0;
+    width: 50%;
+    margin-top: 3%;
+}
